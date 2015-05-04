@@ -6,3 +6,5 @@ Create a parser with own validation and custom action
 Create a console todo list with menu
 # src/decorator.py
 Make a decorator of function_timer that decorate on decorator
+# src/class_dec.py
+Create a class decorator for timer function
