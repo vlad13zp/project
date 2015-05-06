@@ -8,3 +8,5 @@ Create a console todo list with menu
 Make a decorator of function_timer that decorate on decorator
 # src/class_dec.py
 Create a class decorator for timer function
+# src/tests
+Creating different tests for TODO list and documenting it
