@@ -1,0 +1,31 @@
+ (METHOD // GET)
+    GET : http://localhost:1234/tasks - получение всего списка задач
+    Ответ сервера :  { "1" : {"description" : "something", "deadline" : "2015-04-05", "importance" : "10"}, 
+                       "2" : {"description" : "something", "deadline" : "2015-04-05", "importance" : "8"}}
+
+    GET : http://localhost:1234/tasks/1 - получение задачи с идентификатором '1'
+    Ответ сервера :  { "description" : "something", "deadline" : "2015-04-05", "importance" : "10" }
+
+(METHOD // POST)
+    POST : http://localhost:1234/tasks - создание новой задачи
+    POST - data :
+                        description - String
+                        deadline - String
+                        importance - Int
+    Ответ сервера : { "description" : "something", "deadline" : "2015-04-05", "importance" : "10" }
+
+(METHOD // PUT)
+     PUT : http://localhost:1234/tasks/1 - обновление записи с идентификатором '1'    
+     PUT - data :
+                        description - String
+                        deadline - String
+                        importance - Int
+    Ответ сервера : { "description" : "something", "deadline" : "2015-04-05", "importance" : "10" }
+
+(METHOD // DELETE)
+     DELETE : http://localhost:1234/tasks/1 - удалить запись с идентификатором '1'
+     Ответ сервера : { "description" : "something", "deadline" : "2015-04-05", "importance" : "10" }
+
+(Ошибки сервера)
+    Страница 404 (задача не найдена)
+    Ответ сервера : { "Error" : "Not found" } 
